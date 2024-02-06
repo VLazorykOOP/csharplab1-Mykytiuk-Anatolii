@@ -94,6 +94,23 @@ class Program
         
     }
 
+           static void task5()
+        {
+            // Приклад використання функції Multiply
+            Console.WriteLine("Please input first value");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please input first value");
+            double b = Convert.ToDouble(Console.ReadLine());
+            double result = Multiply(a, b);
+            Console.WriteLine($"The product of {a} and {b} is: {result}");
+        }
+
+        // Функція для обчислення добутку двох дійсних чисел
+        static double Multiply(double x, double y)
+        {
+            return x * y;
+        }
+
     static void Main()
     {
 
@@ -111,7 +128,7 @@ Console.Write("n=");
     case 2: Console.WriteLine("You choise task 2"); task2(); break;
     case 3: Console.WriteLine("You choise task 3"); task3(); break;
     case 4: Console.WriteLine("You choise task 4"); task4(); break;
-    case 5: Console.WriteLine("You choise task 5"); break;
+    case 5: Console.WriteLine("You choise task 5"); task5(); break;
     case 6: Console.WriteLine("You choise task 6"); break;
 }
 }
