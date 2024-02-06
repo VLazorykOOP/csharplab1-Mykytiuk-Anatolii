@@ -111,6 +111,18 @@ class Program
             return x * y;
         }
 
+     static void task6()
+{
+    Console.WriteLine("Please input n:");
+    int n = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Please input m:");
+    int m = Convert.ToInt32(Console.ReadLine());
+    
+    float result = ((3f / (n + (m * m) + 1)) + 1) * (m - n);
+    Console.Write("Result is: " + result);
+}
+
+
     static void Main()
     {
 
@@ -129,7 +141,7 @@ Console.Write("n=");
     case 3: Console.WriteLine("You choise task 3"); task3(); break;
     case 4: Console.WriteLine("You choise task 4"); task4(); break;
     case 5: Console.WriteLine("You choise task 5"); task5(); break;
-    case 6: Console.WriteLine("You choise task 6"); break;
+    case 6: Console.WriteLine("You choise task 6"); task6(); break;
 }
 }
 
