@@ -54,7 +54,17 @@ class Program
 
     static void task3()
     {
-
+        Console.WriteLine("Task3 !");
+        Console.WriteLine("Please input coordinate your point:");
+        Console.Write("x = ");
+        float x = float.Parse(Console.ReadLine());
+        Console.Write("y = ");
+        float y = float.Parse(Console.ReadLine());
+        if (x * x + y * y < 225 && y > 0 && y > x)
+            Console.WriteLine("contains");
+        else if (x * x + y * y > 225 || y < 0 || y < x || y < -x)
+            Console.WriteLine("not contains");
+        else Console.WriteLine("on the border");
     }
 
     static void Main()
