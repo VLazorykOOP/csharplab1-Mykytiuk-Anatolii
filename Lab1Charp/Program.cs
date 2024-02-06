@@ -1,16 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
  static void task1()
 {
     Console.WriteLine("Task1 !");
-    Console.Write("s= ");
+    Console.WriteLine("Please input length first catet");
+    Console.Write("length first catet = ");
     string? str = Console.ReadLine();
-    float s = 0; 
-    if (str != null) s = float.Parse(str);
-    double p = 4 * Math.Sqrt(s);
-    Console.WriteLine("p=" + p);
+    float fcatet = 0;
+    if (str != null) fcatet = float.Parse(str);
+    Console.WriteLine("Please input length second catet");
+    Console.Write("length second catet = ");
+    str = Console.ReadLine();
+    float scatet = 0;
+    if (str != null) scatet = float.Parse(str);
+    double S = (fcatet * scatet)/2;
+    Console.WriteLine("S = " + S);
 
 }
 Console.WriteLine("Lab 1 !");
 task1();
-// continue ...
+
