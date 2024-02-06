@@ -67,6 +67,33 @@ class Program
         else Console.WriteLine("on the border");
     }
 
+    static void task4()
+    {
+        Console.WriteLine("Task4 !");
+        Console.WriteLine("Please input m:");
+        Console.Write("m =");
+        int m = Convert.ToInt32(Console.ReadLine());
+        int month = 1;
+        month += m;
+        int finalResult = month % 12;
+        switch (finalResult)
+        {
+            case 0: Console.WriteLine("December"); break;
+            case 1: Console.WriteLine("Janury"); break;
+            case 2: Console.WriteLine("February"); break;
+            case 3: Console.WriteLine("March"); break;
+            case 4: Console.WriteLine("April"); break;
+            case 5: Console.WriteLine("May"); break;
+            case 6: Console.WriteLine("June"); break;
+            case 7: Console.WriteLine("July"); break;
+            case 8: Console.WriteLine("August"); break;
+            case 9: Console.WriteLine("Septemder"); break;
+            case 10: Console.WriteLine("October"); break;
+            case 11: Console.WriteLine("November"); break;
+        }
+        
+    }
+
     static void Main()
     {
 
@@ -83,7 +110,7 @@ Console.Write("n=");
     case 1: Console.WriteLine("You choise task 1"); task1(); break;
     case 2: Console.WriteLine("You choise task 2"); task2(); break;
     case 3: Console.WriteLine("You choise task 3"); task3(); break;
-    case 4: Console.WriteLine("You choise task 4"); break;
+    case 4: Console.WriteLine("You choise task 4"); task4(); break;
     case 5: Console.WriteLine("You choise task 5"); break;
     case 6: Console.WriteLine("You choise task 6"); break;
 }
